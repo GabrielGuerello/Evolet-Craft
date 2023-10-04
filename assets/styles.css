@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Libre Baskerville';
+}
+.title-logo {
+    color: #ff8fab;
+    font-weight: 800;
+    font-size: 40px;
+    font-style: italic;
+    margin-left: 100px;
+}
+.nav-link {
+    font-size: 18px;
+    margin-left: 100px;
+}
+.dropdown-menu {
+    margin-left: 100px;
+}
+.title-item {
+    color: #FB6F92;
+}
+.title-item:hover {
+    color: #ffffff;
+    background-color: #ff8fab;
+    border-radius: 10px;
+}
+.title-logo:hover {
+    color: #ff4171;
+}
+.btn-outline-success {
+    color: #FB6F92;
+    border-color: #FB6F92;
+    --bs-btn-active-bg: #FB6F92;
+    --bs-btn-active-border-color: #FB6F92;
+}
+.btn-outline-success:hover {
+    color: #ffffff;
+    border-color: #FB6F92;
+    background-color: #FB6F92;
+}
+.form-control {
+    border-color: #FB6F92;
+}
+nav {
+    border-bottom: 2px solid #FB6F92;
+}
+.title-section,
+.information__flex{
+    color: #005f73;
+}
+.text-container {
+    color: #FB6F92;
+    gap: 15px;
+    font-size: 16px;
+}
+.information {
+    padding: 20px;
+    margin-top: 50px;
+    background-color: #f8809e;
+    height: auto;
+}
+.information__flex div h3,
+.information__flex div p{
+    font-weight: 500;
+    margin: 0;
+}
+.information__flex div img {
+    margin-right: 10px;
+}
+footer {
+    padding-bottom: 30px;
+}
+footer h4,
+footer p {
+    color: #ff8fab;
+}
+.form-check-input:checked {
+    background-color: #FB6F92;
+    border-color: #FB6F92;
+}
+.footer__contacto ul{
+    list-style-type: none;
+}
+.footer__list a{
+    text-decoration: none;
+    color: #ff8fab;
+}
+.footer__list a:hover {
+    color: #ff4171;
+}
+.footer__list {
+    padding: 0;
+    gap: 20px;
+}
+.card-title {
+    color: #FB6F92;
+}
+.products__cards {
+    gap: 20px;
+}
+.products__cards .card {
+    border-color: #ff8fab;
+}
+.products div img {
+    width: auto;
+    height: 300px;
+}
+.promotion {
+    height: 50px;
+    background-color: #ff8fab;
+    font-size: 24px;
+    font-weight: 600;
+}
+.promotion__text {
+    color: #005f73;
+}
+.promotion__text:hover {
+    color: #ffffff;
+}
+.sale {
+    background-image: url(./images/anthony-calandrelli-s9al8aIiVNU-unsplash.jpg);
+    height: 75vh;
+}
+.sale__title,
+.sale__btn{
+    color: #005f73;
+    border-color: #005f73;
+    --bs-btn-active-bg: #005f73;
+    --bs-btn-active-border-color: #005f73;
+    margin-left: 100px;
+}
+.sale__btn:hover {
+    color: #ffffff;
+    border-color: #005f73;
+    background-color: #005f73;
+}
+.sale__title h1 {
+    color: #005f73;
+    font-weight: 900;
+    font-size: 100px;
+}
+.sale__title h2 {
+    color: #005f73;
+    font-size: 40px;
+}
+.introduction {
+    margin-top: 130px;
+    gap: 35px;
+}
+.introduction__title {
+    font-size: 70px;
+    font-weight: 800;
+    color: #FB6F92;
+}
+.introduction__text {
+    font-size: 24px;
+    color: #ff8fab;
+}
+.margintitle {
+    margin-top: 200px;
+}
+.products__title {
+    font-size: 70px;
+    font-weight: 800;
+    color: #FB6F92;
+}
+.gradient-brand-color {
+    background-image: -webkit-linear-gradient(0deg, #ff6189 0%, #ff98b2 100%);
+    background-image: -ms-linear-gradient(0deg, #ff6189 0%, #ff98b2 100%);
+    color: #005f73;
+}
+.link--right-icon {
+    color: #005f73;
+    text-decoration: none;
+}
+.contactsize {
+    font-size: 40px;
+    font-weight: 600;
+}
+.contact-info__wrapper {
+    overflow: hidden;
+    border-radius: .625rem .625rem 0 0
+}
+
+@media (min-width: 1024px) {
+    .contact-info__wrapper {
+        border-radius: 0 .625rem .625rem 0;
+        padding: 5rem !important
+    }
+}
+.contact-info__list span.position-absolute {
+    left: 0
+}
+.z-index-101 {
+    z-index: 101;
+}
+.list-style--none {
+    list-style: none;
+}
+.contact__wrapper {
+    margin-top: 60px;
+    background-color: #fff;
+    border-radius: 0 0 .625rem .625rem
+}
+
+@media (min-width: 1024px) {
+    .contact__wrapper {
+        border-radius: .625rem 0 .625rem .625rem
+    }
+}
+@media (min-width: 1024px) {
+    .contact-form__wrapper {
+        padding: 5rem !important
+    }
+}
+.shadow-lg, .shadow-lg--on-hover:hover {
+    box-shadow: 0 .8rem 2.8rem #FB6F92 !important;
+}
+.gridimages {
+    gap: 20px;
+}
+.image {
+    height: 190px;
+    width: 100%;
+}
+.card-price:hover {
+    cursor: pointer;
+    background-color: #ff8fab;
+    color: #ffffff;
+}
+.gridimages__cont {
+    border: 1px solid #ff6189;
+}

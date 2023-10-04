@@ -4,120 +4,177 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Evolet Craft</title>
-    <link rel="stylesheet" href="./pages/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/styles.css">
 </head>
 <body>
     <!-- HEADER principal -->
-    <header>
-        <nav class="navbox-links">
-            <a href="./pages/novedades.html" class="nav-link">Novedades</a>
-            <a href="./pages/anillos.html" class="nav-link">Anillos</a>
-            <a href="./pages/collares.html" class="nav-link">Collares</a>
-            <a href="./pages/terminosycondiciones.html" class="nav-link">Term. y Cond.</a>
-            <a href="./pages/contacto.html" class="nav-link">Contacto</a>
-        </nav>
-        <div class="title">
-            <a href="./index.html"><p>Evolet-Craft</p></a>
+    <nav class="navbar navbar-expand-lg bg-white">
+        <div class="container-fluid ms-5">
+          <a class="navbar-brand title-logo" aria-current="page" href="./index.html">Evolet-Craft</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link title-item" href="./pages/novedades.html">Novedades</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link title-item" href="./pages/contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle title-item" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Productos
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item title-item" href="./pages/anillos.html">Anillos</a></li>
+                  <li><a class="dropdown-item title-item" href="./pages/collares.html">Collares</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link title-item" href="./pages/terminosycondiciones.html">Términos y Condiciones</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2 title-search" type="search" placeholder="Buscar..." aria-label="Search">
+              <button class="btn btn-outline-success title-search" type="submit">Buscar</button>
+            </form>
+          </div>
         </div>
-        <div class="nav-links2">
-            <a class="fa-solid fa-user-plus" href="#"></a>
-            <a class="fa-solid fa-heart" href="#"></a>
-            <a class="fa-solid fa-location-dot" href="#"></a>
-            <a class="fa-solid fa-basket-shopping" href="#"></a>
-        </div>
-    </header>
+      </nav>
     <!-- FIN HEADER principal -->
 
     <!-- CUERPO de la página -->
     <main>
          <!-- CAJA PRMOCIÓN -->
-        <div class="promotionbox">
-            <p class="promotion">Con tu compra de $40000 o más, te llevás un collar a elección de regalo!!!</p>
+        <div class="promotion mt-3 d-flex justify-content-center align-items-center">
+            <p class="promotion__text mb-0">Con tu compra de $40000 o más, te llevás un collar a elección de regalo!!!</p>
         </div>
          <!-- FIN caja promoción -->
 
          <!-- IMAGEN ilustrativa -->
-        <section class="vback">
-            <img src="./assets/images/anthony-calandrelli-s9al8aIiVNU-unsplash.jpg" alt="Imagen Ilustrativa">
+        <section class="sale d-flex flex-column justify-content-center">
+            <div class="sale__title">
+                <h1>Flash Sale</h1>
+                <h2>Aprovecha lo último en oferta!!</h2>
+            </div>
+            <div>
+                <a class="sale__btn btn btn-outline-success" href="./pages/novedades.html">Comprá Ahora</a>
+            </div>
         </section>
          <!-- FIN imagen ilustrativa-->
 
          <!-- 1° SECTION INTRODUCCIÓN -->
-        <section class="introbox">
-            <h2 class="introtitle">Ready to Ship</h2>
-            <p class="introtext">Browse our Ready To Ship category for beautiful and classic gifts.</p>
+        <section class="introduction d-flex flex-column justify-content-center align-items-center">
+            <h1 class="introduction__title">Ready to Ship</h1>
+            <p class="introduction__text mt-3">Browse our Ready To Ship category for beautiful and classic gifts.</p>
         </section>
          <!-- FIN 1° section -->
 
          <!-- 2° SECTION = Productos -->
-        <section class="productsintro">
-            <h2 class="productstitle">Estilos Únicos</h2>
-            <div>
-                <a href="./pages/anillos.html">
-                    <img src="./assets/images/anillo.jpg" alt="Anillos">
-                </a>
-                <h3>Anillos</h3>
-                <p>Amplifica el brillo con un look atrevido y natural. Una variedad de cortes de exuberantes cristales verdes, cuidadosamente engastados para maximizar su brillo, compiten por la atención con argollas rosas y aretes florales en ángulo.</p>
-            </div>
-            <div>
-                <a href="./pages/novedades.html">
-                    <img src="./assets/images/relojes.jpg" alt="Relojes">
-                </a>
-                <h3>Novedades</h3>
-                <p>Crea una combinación de nuestras recomendaciones con filas de cristales en brillantes y modernos colores. Los cortes refinados de Millenia contrastan con los mosaicos de Idyllia, una fusión entre la belleza de la naturaleza y nuestro Savoir-Faire.</p>
-            </div>
-            <div>
-                <a href="./pages/collares.html">
-                    <img src="./assets/images/collares.jpg" alt="Collares">
-                </a>
-                <h3>Collares</h3>
-                <p>Capa brillante con hilos de cristales de talla completa diseñados para amplificar la luz con una intensidad irresistible. Con configuraciones de dos puntas para exhibir las impecables facetas de cada piedra, estos collares de varias longitudes fomentan la experimentación sin fin.</p>
+         <div class="d-flex justify-content-center align-items-center margintitle">
+            <h2 class="products__title">Estilos Únicos</h2>
+         </div>
+        <section class="products">
+            <div class="row mt-5 justify-content-center products__cards">
+                <div class="card col-md-3 p-0 h-100">
+                    <img src="./assets/images/anillo.jpg" class="card-img-top" alt="Anillo">
+                    <div class="card-body">
+                        <h3 class="card-title">Anillos</h3>
+                        <p class="card-text">Anillos fascinantes en combinaciones únicas de cristales y colores. Desde diseños florales hasta el estilo que vos más quieras, explora nuevos modelos que celebran la individualidad.</p>
+                        <a href="./pages/anillos.html" class="btn btn-outline-success">Comprá ahora</a>
+                    </div>
+                </div>
+                <div class="card col-md-3 p-0 h-100">
+                    <img src="./assets/images/collares.jpg" class="card-img-top" alt="Collares">
+                    <div class="card-body">
+                        <h3 class="card-title">Collares</h3>
+                        <p class="card-text">Collares con brillo sublime, engastadas con cristales de corte preciso, perfectas cuando se usan solas o en una hermosa combinación.</p>
+                        <a href="./pages/collares.html" class="btn btn-outline-success">Comprá ahora</a>
+                    </div>
+                </div>
+                <div class="card col-md-3 p-0 h-100">
+                    <img src="./assets/images/relojes.jpg" class="card-img-top" alt="Novedades">
+                    <div class="card-body">
+                        <h3 class="card-title">Novedades</h3>
+                        <p class="card-text">La geometría se une a la fauna y la flora, y los cristales se combinan en nuevas formaciones para crear fascinantes diseños de relojes.</p>
+                        <a href="./pages/novedades.html" class="btn btn-outline-success">Comprá ahora</a>
+                    </div>
+                </div>
             </div>
         </section>
          <!-- FIN 2° section -->
 
     </main>
      <!-- 3° SECTION Utilidades -->
-    <section class="utilities">
-        <div class="umetodopago">
-            <img src="./assets/images/tarjeta-de-credito.png" alt="Metodo de pago">
-            <h4>Método de Pago</h4>
-            <p>Tarjeta de Crédito y Débito</p>
+    <section class="information">
+        <div class="container d-flex justify-content-between">
+            <div class="information__flex d-flex align-items-center">
+                <div>
+                    <img src="../assets/images/tarjeta-de-credito.png" alt="Metodo de pago">
+                </div>
+                <div>
+                    <h3>Método de Pago</h3>
+                    <p>Tarjeta de Crédito y Débito</p>
+                </div>
+            </div>
+            <div class="information__flex d-flex align-items-center">
+                <div>
+                    <img src="../assets/images/enviar.png" alt="envío">
+                </div>
+                <div>
+                    <h3>Envío</h3>
+                    <p>Envío a todo el país</p>
+                </div>
+            </div>
+            <div class="information__flex d-flex align-items-center">
+                <div>
+                    <img src="../assets/images/llamada-telefonica.png" alt="Telefono">
+                </div>
+                <div>
+                    <h3>Contacto</h3>
+                    <p>+5411 3480 0405</p></div>
+                </div>
+            <div class="information__flex d-flex align-items-center">
+                <div>
+                    <img src="../assets/images/caja-de-devolucion.png" alt="Devolucion">
+                </div>
+                <div>
+                    <h3>Devoluciones</h3>
+                    <p>Hasta 10 días</p>
+                </div>
+            </div>
         </div>
-        <div class="uenvio">
-            <img src="./assets/images/enviar.png" alt="enviar">
-            <h4>Envío</h4>
-            <p>Envío a todo el país</p>
-        </div>
-        <div class="ucontacto">
-            <img src="./assets/images/llamada-telefonica.png" alt="Telefono">
-            <h4>Contacto</h4>
-            <p>+5411 3480 0405</p>
-        </div>
-        <div class="udevoluciones">
-            <img src="./assets/images/caja-de-devolucion.png" alt="Devolucion">
-            <h4>Devoluciones</h4>
-            <p>Hasta 10 días</p>
-        </div>
+        
     </section>
         <!-- FIN 3° section -->
 
         <!-- FOOTER, fin de página -->
-    <footer>
-        <div class="fmap">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.3783187513723!2d-58.40807362338639!3d-34.59459385701781!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca9006a3a187%3A0xb7cb87e254d43ec3!2sCharcas%202748%2C%20C1425%20CABA!5e0!3m2!1ses-419!2sar!4v1694463898362!5m2!1ses-419!2sar" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    
-            <h4>EvoletCraft. 2024</h4>
+    <footer class="container d-lg-flex justify-content-between mt-5">
+        <div class="footer__map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.3783187513723!2d-58.40807362338639!3d-34.59459385701781!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca9006a3a187%3A0xb7cb87e254d43ec3!2sCharcas%202748%2C%20C1425%20CABA!5e0!3m2!1ses-419!2sar!4v1694463898362!5m2!1ses-419!2sar" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <h4 class="mt-4">EvoletCraft. 2024</h4>
         </div>
-        <div class="fform">
-            <form action="">
-                <label for="newsletter">Newsletter</label>
-                <input class="mail" type="email" placeholder="E-mail" name="newsletter" id="newsletter">
-                <input class="isend" type="button" value="Send">
-            </form>
-        </div>
-        <div class="fcontacto">
-            <ul>
-                <li><a href="./index.html">Inicio</a></li>
+        <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-outline-success">Submit</button>
+          </form>
+        <div class="footer__contacto d-flex flex-column">
+            <ul class="d-flex footer__list">
+                <li><a href="index.html">Inicio</a></li>
                 <li><a href="./pages/contacto.html">Contacto</a></li>
                 <li><a href="./pages/novedades.html">Novedades</a></li>
             </ul>
@@ -125,7 +182,7 @@
         </div>
     </footer>
     <!-- FIN footer -->
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/8e6a439af6.js" crossorigin="anonymous"></script>
 </body>
 </html>

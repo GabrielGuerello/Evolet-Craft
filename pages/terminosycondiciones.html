@@ -4,61 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Evolet Craft</title>
-    <link rel="stylesheet" href="./styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/styles.css">
 </head>
 <body>
      <!-- HEADER principal -->
-     <header>
-        <nav class="navbox-links">
-            <a href="./novedades.html" class="nav-link">Novedades</a>
-            <a href="./anillos.html" class="nav-link">Anillos</a>
-            <a href="./collares.html" class="nav-link">Collares</a>
-            <a href="./terminosycondiciones.html" class="nav-link">Term. y Cond.</a>
-            <a href="./contacto.html" class="nav-link">Contacto</a>
-        </nav>
-        <div class="title">
-            <a href="../index.html"><p>Evolet-Craft</p></a>
+     <nav class="navbar navbar-expand-lg bg-white">
+        <div class="container-fluid ms-5">
+          <a class="navbar-brand title-logo" href="../index.html">Evolet-Craft</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link title-item" href="./novedades.html">Novedades</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link title-item" href="./contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle title-item" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Productos
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item title-item" href="./anillos.html">Anillos</a></li>
+                  <li><a class="dropdown-item title-item" href="./collares.html">Collares</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link title-item" aria-current="page" href="./terminosycondiciones.html">Términos y Condiciones</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2 title-search" type="search" placeholder="Buscar..." aria-label="Search">
+              <button class="btn btn-outline-success title-search" type="submit">Buscar</button>
+            </form>
+          </div>
         </div>
-        <div class="nav-links2">
-            <a class="fa-solid fa-user-plus" href="#"></a>
-            <a class="fa-solid fa-heart" href="#"></a>
-            <a class="fa-solid fa-location-dot" href="#"></a>
-            <a class="fa-solid fa-basket-shopping" href="#"></a>
-        </div>
-    </header>
+      </nav>
     <!-- FIN HEADER principal -->
 
     <!-- CUERPO de la página -->
-    <main>
+    <main class="main">
         <!-- TÍTULO PÁGINA -->
-        <div class="title-section">
-            <h2>TÉRMINOS Y CONDICIONES</h2>
+        <div class="title-section d-flex justify-content-center mt-2 pt-5">
+            <h1>TÉRMINOS Y CONDICIONES</h1>
         </div>
         
         <!-- SECCIÓN TyC -->
-        <section class="text-container">
+        <section class="text-container container d-flex flex-column pt-5">
             <p>Términos y condiciones Evolet-Craft</p>
-            <br><br>
             <p>🛒 Local Físico 🛍️
 
                 Evolet-Craft: Charcas 2748 1A. Lunes a Sábados de 14:00 a 18:00.
                 
                 Edificio</p>
-            <br><br>
             <p>
                 💌Envíos💌
             </p>
             <p>
                 3 días a la semana se envían todas las compras por Correo Argentino. Los precios varían según tu zona, provincia y peso del paquete.
             </p>
-            <br><br>
             <p>
                 🚫Cancelación de pedidos🚫
             </p>
             <p>
                 Las órdenes serán canceladas sino son abonadas en un lapso de las 48hs hecha la compra. En el caso de los pedidos ya abonados para retirar en Evolet-Craft, si en 30 días no se retira tu compra, se cancela y NO se hace devolución de ningún tipo. Dado que él "local" NO puede ser usado de depósito.
             </p>
-            <br><br>
             <p>
                 ⚠️Atención Retiros⚠️
             </p>
@@ -67,14 +80,12 @@
                 Las compras que se retiran en el local y abonan en efectivo se reservan sólo 3 días, pasado ese tiempo se cancelan.
                 Informar siempre cuando retiren por el local: Número de orden de compra y/o nombre de quién realizó el pedido más el nombre del emprendimiento (Evolet-Craft).
             </p>
-            <br><br>
             <p>
                 ⚠️IMPORTANTE⚠️
             </p>
             <p>
                 No nos hacemos cargo si la compra no la retiran, siendo que se mandan todos los datos para el seguimiento del paquete. Si el paquete se devuelve al remitente, hay que coordinar el nuevo envío, el cual va a costar un 10% adicional. (Por los costos de realizarlo nuevamente)
             </p>
-            <br><br>
             <p>
                 ⚠️ Devoluciones⚠️
             </p>
@@ -82,7 +93,6 @@
                 Las devoluciones o cambios de productos son únicamente para las compras realizadas en la web en la cual se detalla que el producto tiene un defecto o vino con fallo.
                 En el caso de los artículos electrónicos en el local, siempre son probados antes de su compra
             </p>
-            <br><br>
             <p>
                 🌈Consultas🌈
             </p>
@@ -93,45 +103,72 @@
         <!-- FIN SECCIÓN -->
 
     <!-- 3° SECTION Utilidades -->
-     <section class="utilities">
-        <div class="umetodopago">
-            <img src="../assets/images/tarjeta-de-credito.png" alt="Metodo de pago">
-            <h4>Método de Pago</h4>
-            <p>Tarjeta de Crédito y Débito</p>
+    <section class="information">
+        <div class="container d-flex justify-content-between">
+            <div class="information__flex d-flex align-items-center">
+                <div>
+                    <img src="../assets/images/tarjeta-de-credito.png" alt="Metodo de pago">
+                </div>
+                <div>
+                    <h3>Método de Pago</h3>
+                    <p>Tarjeta de Crédito y Débito</p>
+                </div>
+            </div>
+            <div class="information__flex d-flex align-items-center">
+                <div>
+                    <img src="../assets/images/enviar.png" alt="envío">
+                </div>
+                <div>
+                    <h3>Envío</h3>
+                    <p>Envío a todo el país</p>
+                </div>
+            </div>
+            <div class="information__flex d-flex align-items-center">
+                <div>
+                    <img src="../assets/images/llamada-telefonica.png" alt="Telefono">
+                </div>
+                <div>
+                    <h3>Contacto</h3>
+                    <p>+5411 3480 0405</p></div>
+                </div>
+            <div class="information__flex d-flex align-items-center">
+                <div>
+                    <img src="../assets/images/caja-de-devolucion.png" alt="Devolucion">
+                </div>
+                <div>
+                    <h3>Devoluciones</h3>
+                    <p>Hasta 10 días</p>
+                </div>
+            </div>
         </div>
-        <div class="uenvio">
-            <img src="../assets/images/enviar.png" alt="enviar">
-            <h4>Envío</h4>
-            <p>Envío a todo el país</p>
-        </div>
-        <div class="ucontacto">
-            <img src="../assets/images/llamada-telefonica.png" alt="Telefono">
-            <h4>Contacto</h4>
-            <p>+5411 3480 0405</p>
-        </div>
-        <div class="udevoluciones">
-            <img src="../assets/images/caja-de-devolucion.png" alt="Devolucion">
-            <h4>Devoluciones</h4>
-            <p>Hasta 10 días</p>
-        </div>
+        
     </section>
         <!-- FIN 3° section -->
 
         <!-- FOOTER, fin de página -->
-    <footer>
-        <div class="fmap">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5523.662629947535!2d-58.40312794629703!3d-34.59431230835624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1693943966635!5m2!1ses-419!2sar" width="260" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <h4>EvoletCraft. 2024</h4>
+    <footer class="container d-lg-flex justify-content-between mt-5">
+        <div class="footer__map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.3783187513723!2d-58.40807362338639!3d-34.59459385701781!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca9006a3a187%3A0xb7cb87e254d43ec3!2sCharcas%202748%2C%20C1425%20CABA!5e0!3m2!1ses-419!2sar!4v1694463898362!5m2!1ses-419!2sar" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <h4 class="mt-4">EvoletCraft. 2024</h4>
         </div>
-        <div class="fform">
-            <form action="">
-                <label for="newsletter">Newsletter</label>
-                <input type="email" placeholder="E-mail" name="newsletter" id="newsletter">
-                <input class="isend" type="button" value="Send">
-            </form>
-        </div>
-        <div class="fcontacto">
-            <ul>
+        <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-outline-success">Submit</button>
+          </form>
+        <div class="footer__contacto d-flex flex-column">
+            <ul class="d-flex footer__list">
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="./contacto.html">Contacto</a></li>
                 <li><a href="./novedades.html">Novedades</a></li>
@@ -140,7 +177,7 @@
         </div>
     </footer>
     <!-- FIN footer -->
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/8e6a439af6.js" crossorigin="anonymous"></script>
 </body>
 </html>
