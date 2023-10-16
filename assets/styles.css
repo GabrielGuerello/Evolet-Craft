@@ -5,6 +5,11 @@
     box-sizing: border-box;
     font-family: 'Libre Baskerville';
 }
+body, html {
+  width: 100%;
+  overflow-x: hidden;
+}
+
 .title-logo {
     color: #ff8fab;
     font-weight: 800;
@@ -205,7 +210,17 @@ footer p {
     background-color: #fff;
     border-radius: 0 0 .625rem .625rem
 }
-
+@media (min-width: 992px) {
+  .collapse:not(.show) {
+    display: none;
+  }
+}
+@media (min-width: 1430px) {
+.navbar-expand-lg .navbar-collapse {
+    flex-basis: auto;
+    display: flex !important;
+  }
+}
 @media (min-width: 1024px) {
     .contact__wrapper {
         border-radius: .625rem 0 .625rem .625rem
@@ -215,6 +230,12 @@ footer p {
     .contact-form__wrapper {
         padding: 5rem !important
     }
+}
+@media (max-width: 588px) {
+.container, .container-sm {
+    max-width: 540px;
+    flex-direction: column;
+  }
 }
 .shadow-lg, .shadow-lg--on-hover:hover {
     box-shadow: 0 .8rem 2.8rem #FB6F92 !important;
