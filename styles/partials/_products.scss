@@ -1,0 +1,15 @@
+.card-title {
+    color: $color-primary;
+}
+.products__cards {
+    gap: 20px;
+  
+    .card {
+      border-color: $color-secondary;
+    }
+  
+    div img {
+      width: auto;
+      height: 300px;
+    }
+}

@@ -1,0 +1,21 @@
+.shadow-lg, .shadow-lg--on-hover:hover {
+    box-shadow: 0 0.8rem 2.8rem $color-primary !important;
+  }
+  
+  .gridimages {
+    gap: $spacing-gap;
+    .image {
+      height: 190px;
+      width: 100%;
+  
+      .card-price:hover {
+        cursor: pointer;
+        background-color: $color-secondary;
+        color: #ffffff;
+      }
+  
+      .gridimages__cont {
+        border: 1px solid #ff6189;
+      }
+    }
+  }

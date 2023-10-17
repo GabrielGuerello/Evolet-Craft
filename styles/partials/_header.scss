@@ -1,0 +1,37 @@
+.title-logo {
+    color: $color-secondary;
+    font-weight: 800;
+    font-size: 40px;
+    font-style: italic;
+    margin-left: $spacing-left;
+  
+    @include hover-effect(#ff4171);
+  }
+  .nav-link, .dropdown-menu {
+    font-size: 18px;
+    margin-left: $spacing-left;
+  
+    @include hover-effect(#ff4171);
+  }
+  .title-item {
+    color: $color-primary;
+  
+    @include hover-effect(#ffffff, $color-secondary, 10px);
+  }
+  .btn-outline-success {
+    color: $color-primary;
+    border-color: $color-primary;
+  
+    @include hover-effect(#ffffff, $color-primary);
+    
+    &.btn-outline-success:hover {
+      
+    border-color: $color-primary;
+    }
+  }
+  .form-control {
+    border-color: $color-primary;
+  }
+  nav {
+    border-bottom: 2px solid $color-primary;
+  }

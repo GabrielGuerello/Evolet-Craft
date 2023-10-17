@@ -1,0 +1,22 @@
+footer {
+    padding-bottom: 30px;
+    h4, p {
+      color: $color-secondary;
+    }
+}
+.form-check-input:checked {
+    background-color: $color-primary;
+    border-color: $color-primary;
+}
+.footer__contacto ul, .footer__list {
+    list-style-type: none;
+    a {
+      text-decoration: none;
+      color: $color-secondary;
+  
+      @include hover-effect(#ff4171);
+    }
+  
+    padding: 0;
+    gap: 20px;
+}

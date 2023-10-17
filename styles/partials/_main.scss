@@ -1,0 +1,58 @@
+.promotion {
+    height: 50px;
+    background-color: $color-secondary;
+    font-size: 24px;
+    font-weight: 600;
+  
+    .promotion__text {
+      color: #005f73;
+  
+      @include hover-effect(#ffffff);
+    }
+}
+.sale {
+    background-image: url(../assets/images/anthony-calandrelli-s9al8aIiVNU-unsplash.jpg);
+    height: 75vh;
+    .sale__title, .sale__btn {
+      color: #005f73;
+      border-color: #005f73;
+      --bs-btn-active-bg: #005f73;
+      --bs-btn-active-border-color: #005f73;
+      margin-left: $spacing-left;
+  
+      @include hover-effect(#ffffff, null);
+      h1 {
+        color: #005f73;
+        font-weight: 900;
+        font-size: 100px;
+      }
+  
+      h2 {
+        color: #005f73;
+        font-size: 40px;
+      }
+    }
+    .sale__btn:hover {
+      background-color: #005f73;
+      border-color: #005f73;
+    }
+}
+.introduction {
+    margin-top: 130px;
+    gap: 35px;
+    .introduction__title {
+      font-size: 70px;
+      font-weight: 800;
+      color: $color-primary;
+    }
+    .introduction__text {
+      font-size: 24px;
+      color: $color-secondary;
+    }
+}
+.margintitle, .products__title {
+    font-size: 70px;
+    font-weight: 800;
+    margin-top: $spacing-left;
+    color: $color-primary;
+}

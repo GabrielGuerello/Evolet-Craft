@@ -1,0 +1,11 @@
+@mixin hover-effect($hover-color, $bg-color: null, $border-radius: null) {
+    &:hover {
+      color: $hover-color;
+      @if $bg-color {
+        background-color: $bg-color;
+      }
+      @if $border-radius {
+        border-radius: $border-radius;
+      }
+    }
+  }
