@@ -6,9 +6,21 @@
   
     .promotion__text {
       color: #005f73;
-  
+      animation: cambioColor 0.7s;
+      animation-iteration-count: infinite;
       @include hover-effect(#ffffff);
     }
+}
+@keyframes cambioColor {
+  0% {
+    color: #ffffff;
+  }
+  50% {
+    color: #005f73;
+  }
+  100% {
+    color: #ffffff;
+  }
 }
 .sale {
     background-image: url(../assets/images/anthony-calandrelli-s9al8aIiVNU-unsplash.jpg);
