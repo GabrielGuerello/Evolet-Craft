@@ -3,12 +3,41 @@
     background-color: $color-secondary;
     font-size: 24px;
     font-weight: 600;
-  
+    @media (max-width: 540px) {
+      height: 40px;
+    }
+    @media (max-width: 463px) {
+      height: 30px;
+    }
+    @media (max-width: 385px) {
+      height: 15px;
+    }
     .promotion__text {
       color: #005f73;
       animation: cambioColor 0.7s;
       animation-iteration-count: infinite;
       @include hover-effect(#ffffff);
+      @media (max-width: 926px) {
+        font-size: 20px;
+      }
+      @media (max-width: 771px) {
+        font-size: 18px;
+      }
+      @media (max-width: 694px) {
+        font-size: 16px;
+      }
+      @media (max-width: 617px) {
+        font-size: 14px;
+      }
+      @media (max-width: 540px) {
+        font-size: 12px;
+      }
+      @media (max-width: 463px) {
+        font-size: 10px;
+      }
+      @media (max-width: 385px) {
+        font-size: 8px;
+      }
     }
 }
 @keyframes cambioColor {
@@ -20,6 +49,11 @@
   }
   100% {
     color: #ffffff;
+  }
+}
+@media (max-width: 926px) {
+  .promotion__text {
+    font-size: 20px;
   }
 }
 .sale {
