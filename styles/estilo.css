@@ -65,13 +65,81 @@ nav {
   font-size: 24px;
   font-weight: 600;
 }
+@media (max-width: 540px) {
+  .promotion {
+    height: 40px;
+  }
+}
+@media (max-width: 463px) {
+  .promotion {
+    height: 30px;
+  }
+}
+@media (max-width: 385px) {
+  .promotion {
+    height: 15px;
+  }
+}
 .promotion .promotion__text {
   color: #005f73;
+  animation: cambioColor 0.7s;
+  animation-iteration-count: infinite;
 }
 .promotion .promotion__text:hover {
   color: #ffffff;
 }
+@media (max-width: 926px) {
+  .promotion .promotion__text {
+    font-size: 20px;
+  }
+}
+@media (max-width: 771px) {
+  .promotion .promotion__text {
+    font-size: 18px;
+  }
+}
+@media (max-width: 694px) {
+  .promotion .promotion__text {
+    font-size: 16px;
+  }
+}
+@media (max-width: 617px) {
+  .promotion .promotion__text {
+    font-size: 14px;
+  }
+}
+@media (max-width: 540px) {
+  .promotion .promotion__text {
+    font-size: 12px;
+  }
+}
+@media (max-width: 463px) {
+  .promotion .promotion__text {
+    font-size: 10px;
+  }
+}
+@media (max-width: 385px) {
+  .promotion .promotion__text {
+    font-size: 8px;
+  }
+}
 
+@keyframes cambioColor {
+  0% {
+    color: #ffffff;
+  }
+  50% {
+    color: #005f73;
+  }
+  100% {
+    color: #ffffff;
+  }
+}
+@media (max-width: 926px) {
+  .promotion__text {
+    font-size: 20px;
+  }
+}
 .sale {
   background-image: url(../assets/images/anthony-calandrelli-s9al8aIiVNU-unsplash.jpg);
   height: 75vh;
@@ -137,8 +205,15 @@ nav {
   background-color: #ff8fab;
   color: #ffffff;
 }
-.gridimages .image .gridimages__cont {
+
+.gridimages .gridimages__cont:hover {
+  transform: translateY(-20px);
+  box-shadow: #f8809e 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.gridimages__cont {
   border: 1px solid #ff6189;
+  transition: all 0.3s;
 }
 
 .card-title {
@@ -150,10 +225,16 @@ nav {
 }
 .products__cards .card {
   border-color: #ff8fab;
+  transition: all 0.4s;
 }
 .products__cards div img {
   width: auto;
   height: 300px;
+}
+
+.products__cards .card:hover {
+  transform: scale(1.05) translateY(-30px);
+  box-shadow: #f8809e 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 .title-section, .information__flex {
@@ -164,6 +245,7 @@ nav {
   color: #FB6F92;
   gap: 15px;
   font-size: 16px;
+  font-weight: bold;
 }
 
 .information {
